@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset=utf-8" />
+<TITLE>DESIGN PORTFOLIO</TITLE>
+<META name="GENERATOR" content="MSHTML 11.00.9600.18792">
+<!--캐쉬가 되지 않게-->
+<META http-equiv="“Page-Enter”" content="“revealtrans(duration=1,transition=12)”">
+<!--페이지 들어갈때 트랜지션 장면전환 효과-->
+<META http-equiv="“Page-Exit”" content="“revealtrans(duration=1,transition=12)”">
+<!--페이지 나갈때 트랜지션 장면전환 효과-->
+<META http-equiv="“Imagetoolbar”" content="“no”">
+<!--이미지 마우스 오버시 이미지 툴바 생기지 않게 해줌-->
+<META name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.25,maximum-scale=1.6">
+
+<!-- 구글 웹폰트-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+<!-- 웹아이콘-->
+<LINK href="js/icon_512.png" rel="shortcut icon"> <!-- iPhone icon -->
+<LINK href="js/ios_57.png" rel="apple-touch-icon" sizes="57x57"> <!-- iPad icon -->
+<LINK href="js/ios_72.png" rel="apple-touch-icon" sizes="72x72"> <!-- iPhone icon(Retina) -->
+<LINK href="js/ios_114.png" rel="apple-touch-icon" sizes="114x114"> <!-- iPad icon(Retina) -->
+<LINK href="js/ios_144.png" rel="apple-touch-icon" sizes="144x144">
+
+<LINK href="js/styles.css" rel="stylesheet" type="text/css" media="all">
+
+</HEAD>	
+
+<SCRIPT src="js/jquery.min.js" type="text/javascript"></SCRIPT>     
+<SCRIPT src="js/jquery.quicksand.js" type="text/javascript"></SCRIPT>         
+<SCRIPT src="js/jquery.easing.js" type="text/javascript"></SCRIPT>         
+<SCRIPT src="js/script.js" type="text/javascript"></SCRIPT>       	 
+<SCRIPT src="js/jquery.prettyPhoto.js" type="text/javascript"></SCRIPT>
+
+
+<!--  top 버튼 스크립트 -->
+<SCRIPT type="text/javascript">
+
+function go_top(orix,oriy,desx,desy) {
+	var Timer;
+	if (document.body.scrollTop == 0) {
+		var winHeight = document.documentElement.scrollTop;
+	} else {
+		var winHeight = document.body.scrollTop;
+	}
+	if(Timer) clearTimeout(Timer);
+	startx = 0;
+	starty = winHeight;
+	if(!orix || orix < 0) orix = 0;
+	if(!oriy || oriy < 0) oriy = 0;
+	var speed = 7;
+	if(!desx) desx = 0 + startx;
+	if(!desy) desy = 0 + starty;
+	desx += (orix - startx) / speed;
+	if (desx < 0) desx = 0;
+	desy += (oriy - starty) / speed;
+	if (desy < 0) desy = 0;
+	var posX = Math.ceil(desx);
+	var posY = Math.ceil(desy);
+	window.scrollTo(posX, posY);
+	if((Math.floor(Math.abs(startx - orix)) < 1) && (Math.floor(Math.abs(starty - oriy)) < 1)){
+		clearTimeout(Timer);
+		window.scroll(orix,oriy);
+	}else if(posX != orix || posY != oriy){
+		Timer = setTimeout("go_top("+orix+","+oriy+","+desx+","+desy+")",15);
+	}else{
+		clearTimeout(Timer);
+	}
+}
+</SCRIPT>
+
+
+<BODY>
+<!--BODY class="homepage" -->
+
+<!-- wrapper -->
+<DIV class="wrapper">
+
+	<img src="img/main_top1.jpg" width="100%">
+	<!-- portfolio-content -->
+	<DIV class="portfolio-content">
+		<H3><A id="logo" href="index.html">&nbsp;&nbsp;</A></H3>
+		<H1>Design</H1>
+		<br /><br /><br />
+		<!--portfolio-categ filter-->
+		<UL class="portfolio-categ filter" id="webpage">
+			<LI class="all active"><A href="index.html">ALL</A></LI>
+			<LI class="cat-item-1"><A href="#" title="WEB">Web Design</A> </LI>
+			<LI class="cat-item-2"><A href="#" title="EDITORIAL">Print Design</A> </LI>
+			<LI class="cat-item-3"><A href="#" title="key visual">Key Visual</A> </LI>
+			<LI class="cat-item-4"><A href="#" title="MOBILE">Mobile Design</A> </LI>
+			<LI class="cat-item-5"><A href="#" title="Other Works">Other Design Works</A> </LI>
+			<LI class="cat-item-6"><A href="#" title="Sub page">Sub page Design</A> </LI>
+		</UL>
+
+
+		<UL class="portfolio-area">
+
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic305">
+				<DIV><SPAN class="image-block"><A href="img/pic305.jpg" target="_blank"><IMG src="imgs/s305.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2022 키비주얼 디자인</P></DIV></DIV>
+			</LI>			
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic336">
+				<DIV><SPAN class="image-block"><A href="img/pic100.jpg" target="_blank"><IMG src="imgs/s100.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;22/23 키비주얼 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic201">
+				<DIV><SPAN class="image-block"><A href="img/pic201.jpg" target="_blank"><IMG src="imgs/s201.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;스페셜 카드 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic405">
+				<DIV><SPAN class="image-block"><A href="img/pic405.jpg" target="_blank"><IMG src="imgs/s405.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2019 모바일 청접장 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic213">
+				<DIV><SPAN class="image-block"><A href="img/pic213.jpg" target="_blank"><IMG src="imgs/s213.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;객실 할인권 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic215">
+				<DIV><SPAN class="image-block"><A href="img/pic215.jpg" target="_blank"><IMG src="imgs/s215.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;디자인</P></DIV></DIV>
+			</LI>			
+
+			<!--Editorial -->
+
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic204">
+				<DIV><SPAN class="image-block"><A href="img/pic204.jpg" target="_blank"><IMG src="imgs/s204.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic203">
+				<DIV><SPAN class="image-block"><A href="img/pic203.jpg" target="_blank"><IMG src="imgs/s203.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;카드 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic205">
+				<DIV><SPAN class="image-block"><A href="img/pic205.jpg" target="_blank"><IMG src="imgs/s205.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;골프 홀안내 카드 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic206">
+				<DIV><SPAN class="image-block"><A href="img/pic206.jpg" target="_blank"><IMG src="imgs/s206.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic207">
+				<DIV><SPAN class="image-block"><A href="img/pic207.jpg" target="_blank"><IMG src="imgs/s207.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;루지 제작물 디자인</P></DIV></DIV>
+			</LI>													
+						
+
+			<!--web -->
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic127">
+				<DIV><SPAN class="image-block"><A href="img/pic127.jpg" target="_blank"><IMG src="imgs/s127.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;웰리힐리파크 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic128">
+				<DIV><SPAN class="image-block"><A href="img/pic128.jpg" target="_blank"><IMG src="imgs/s128.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;웰리힐리파크 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic129">
+				<DIV><SPAN class="image-block"><A href="img/pic129.jpg" target="_blank"><IMG src="imgs/s129.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;웰리힐리파크 워터플래닛 메인 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic130">
+				<DIV><SPAN class="image-block"><A href="img/pic130.jpg" target="_blank"><IMG src="imgs/s130.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;웰리힐리파크 워터플래닛 메인 디자인</P></DIV></DIV>
+			</LI>
+			
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic104">
+				<DIV><SPAN class="image-block"><A href="img/pic104.jpg" target="_blank"><IMG src="imgs/s104.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 웰리힐리CC 홈페이지 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic106">
+				<DIV><SPAN class="image-block"><A href="img/pic106.jpg" target="_blank"><IMG src="imgs/s106.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2010 봄시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic105">
+				<DIV><SPAN class="image-block"><A href="img/pic105.jpg" target="_blank"><IMG src="imgs/s105.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2008 여름시즌 메인 디자인</P></DIV></DIV>
+			</LI>			
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic108">
+				<DIV><SPAN class="image-block"><A href="img/pic108.jpg" target="_blank"><IMG src="imgs/s108.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2008 스노우어드벤처 메인 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic109">
+				<DIV><SPAN class="image-block"><A href="img/pic109.jpg" target="_blank"><IMG src="imgs/s109.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2009 가을 이벤트 메인 디자인</P></DIV></DIV>
+			</LI>					
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic110">
+				<DIV><SPAN class="image-block"><A href="img/pic110.jpg" target="_blank"><IMG src="imgs/s110.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2018 여름시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic107">
+				<DIV><SPAN class="image-block"><A href="img/pic107.jpg" target="_blank"><IMG src="imgs/s107.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2003 유비에셋 저축은행 메인 디자인</P></DIV></DIV>
+			</LI>							
+
+
+			<!--key visual -->
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic301">
+				<DIV><SPAN class="image-block"><A href="img/pic301.jpg" target="_blank"><IMG src="imgs/s301.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;20/21 키비주얼 디자인 시안</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic302">
+				<DIV><SPAN class="image-block"><A href="img/pic302.jpg" target="_blank"><IMG src="imgs/s302.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;20/21 키비주얼 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic303">
+				<DIV><SPAN class="image-block"><A href="img/pic303.jpg" target="_blank"><IMG src="imgs/s303.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2020 키비주얼 디자인 시안</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic304">
+				<DIV><SPAN class="image-block"><A href="img/pic304.jpg" target="_blank"><IMG src="imgs/s304.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;21/22 키비주얼 디자인 시안</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic306">
+				<DIV><SPAN class="image-block"><A href="img/pic306.jpg" target="_blank"><IMG src="imgs/s306.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;20/21 키비주얼 디자인 시안</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic307">
+				<DIV><SPAN class="image-block"><A href="img/pic307.jpg" target="_blank"><IMG src="imgs/s307.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2021 키비주얼 디자인</P></DIV></DIV>
+			</LI>												
+
+			<!--Mobile -->
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic401">
+				<DIV><SPAN class="image-block"><A href="img/pic401.jpg" target="_blank"><IMG src="imgs/s401.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2019 모바일 청접장</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic402">
+				<DIV><SPAN class="image-block"><A href="img/pic402.jpg" target="_blank"><IMG src="imgs/s402.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2015 모바일 초대장</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic403">
+				<DIV><SPAN class="image-block"><A href="img/pic403.jpg" target="_blank"><IMG src="imgs/s403.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2020 모바일 초대장</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic404">
+				<DIV><SPAN class="image-block"><A href="img/pic404.jpg" target="_blank"><IMG src="imgs/s404.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2018 모바일 청접장</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic405">
+				<DIV><SPAN class="image-block"><A href="img/pic405.jpg" target="_blank"><IMG src="imgs/s405.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2019 모바일 청접장</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic406">
+				<DIV><SPAN class="image-block"><A href="img/pic406.jpg" target="_blank"><IMG src="imgs/s406.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2015 모바일 웹페이지</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic407">
+				<DIV><SPAN class="image-block"><A href="img/pic407.jpg" target="_blank"><IMG src="imgs/s407.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2020 모바일 웹페이지</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-4" data-id="pic408">
+				<DIV><SPAN class="image-block"><A href="img/pic408.jpg" target="_blank"><IMG src="imgs/s408.jpg" alt="" width="260" height="320" title="MOBILE"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2018 모바일 초대장</P></DIV></DIV>
+			</LI>					
+			
+			<!--web -->		
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic102">
+				<DIV><SPAN class="image-block"><A href="img/pic102.jpg" target="_blank"><IMG src="imgs/s102.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;09/10 겨울시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic103">
+				<DIV><SPAN class="image-block"><A href="img/pic103.jpg" target="_blank"><IMG src="imgs/s103.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 봄시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic101">
+				<DIV><SPAN class="image-block"><A href="img/pic101.jpg" target="_blank"><IMG src="imgs/s101.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 메인 인트로 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic112">
+				<DIV><SPAN class="image-block"><A href="img/pic112.jpg" target="_blank"><IMG src="imgs/s112.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 글로벌(영어) 사이트 메인디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic113">
+				<DIV><SPAN class="image-block"><A href="img/pic113.jpg" target="_blank"><IMG src="imgs/s113.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2008 봄시즌 메인 디자인</P></DIV></DIV>
+			</LI>									
+			<LI class="portfolio-item2" data-type="cat-item-1" data-id="pic115">
+				<DIV><SPAN class="image-block"><A href="img/pic115.jpg" target="_blank"><IMG src="imgs/s115.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 오스타 CC 메인 디자인</P></DIV></DIV>
+			</LI>	
+
+			<!--Editorial -->
+
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic208">
+				<DIV><SPAN class="image-block"><A href="img/pic208.jpg" target="_blank"><IMG src="imgs/s208.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;객실 할인쿠폰 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic209">
+				<DIV><SPAN class="image-block"><A href="img/pic209.jpg" target="_blank"><IMG src="imgs/s209.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;분양 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic210">
+				<DIV><SPAN class="image-block"><A href="img/pic210.jpg" target="_blank"><IMG src="imgs/s210.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;강원도 관광안내도 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic211">
+				<DIV><SPAN class="image-block"><A href="img/pic211.jpg" target="_blank"><IMG src="imgs/s211.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;행사 안내 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-2" data-id="pic212">
+				<DIV><SPAN class="image-block"><A href="img/pic212.jpg" target="_blank"><IMG src="imgs/s212.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;이벤트 안내 인쇄물 디자인</P></DIV></DIV>
+			</LI>
+
+	
+
+			<!--order -->
+
+			<LI class="portfolio-item2" data-type="cat-item-5" data-id="pic208">
+				<DIV><SPAN class="image-block"><A href="img/pic208.jpg" target="_blank"><IMG src="imgs/s208.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;객실 할인쿠폰 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-5" data-id="pic209">
+				<DIV><SPAN class="image-block"><A href="img/pic209.jpg" target="_blank"><IMG src="imgs/s209.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;분양 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-5" data-id="pic210">
+				<DIV><SPAN class="image-block"><A href="img/pic210.jpg" target="_blank"><IMG src="imgs/s210.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;강원도 관광안내도 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-5" data-id="pic211">
+				<DIV><SPAN class="image-block"><A href="img/pic211.jpg" target="_blank"><IMG src="imgs/s211.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;행사 안내 리플렛 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-5" data-id="pic212">
+				<DIV><SPAN class="image-block"><A href="img/pic212.jpg" target="_blank"><IMG src="imgs/s212.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;이벤트 안내 인쇄물 디자인</P></DIV></DIV>
+			</LI>
+		
+			<!--sub page -->		
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic102">
+				<DIV><SPAN class="image-block"><A href="img/pic102.jpg" target="_blank"><IMG src="imgs/s102.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;09/10 겨울시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic103">
+				<DIV><SPAN class="image-block"><A href="img/pic103.jpg" target="_blank"><IMG src="imgs/s103.jpg" alt="" width="260" height="320" title="WEB"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 봄시즌 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic101">
+				<DIV><SPAN class="image-block"><A href="img/pic101.jpg" target="_blank"><IMG src="imgs/s101.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 메인 인트로 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic112">
+				<DIV><SPAN class="image-block"><A href="img/pic112.jpg" target="_blank"><IMG src="imgs/s112.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 글로벌(영어) 사이트 메인디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic113">
+				<DIV><SPAN class="image-block"><A href="img/pic113.jpg" target="_blank"><IMG src="imgs/s113.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2008 봄시즌 메인 디자인</P></DIV></DIV>
+			</LI>									
+			<LI class="portfolio-item2" data-type="cat-item-6" data-id="pic115">
+				<DIV><SPAN class="image-block"><A href="img/pic115.jpg" target="_blank"><IMG src="imgs/s115.jpg" alt="" width="260" height="320" title="WEB""></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2011 오스타 CC 메인 디자인</P></DIV></DIV>
+			</LI>
+
+			<!--key visual -->
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic308">
+				<DIV><SPAN class="image-block"><A href="img/pic308.jpg" target="_blank"><IMG src="imgs/s308.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;여름시즌 키비주얼 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic309">
+				<DIV><SPAN class="image-block"><A href="img/pic309.jpg" target="_blank"><IMG src="imgs/s309.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;2018 봄시즌 키비주얼 디자인</P></DIV></DIV>
+			</LI>	
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic310">
+				<DIV><SPAN class="image-block"><A href="img/pic310.jpg" target="_blank"><IMG src="imgs/s310.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;19/20 시즌권 판매페이지 메인 디자인</P></DIV></DIV>
+			</LI>
+			<LI class="portfolio-item2" data-type="cat-item-3" data-id="pic311">
+				<DIV><SPAN class="image-block"><A href="img/pic311.jpg" target="_blank"><IMG src="imgs/s311.jpg" alt="" width="260" height="320" title="key visual"></A></SPAN>
+				<DIV><P class="post-subtitle">&#169;20/21 키비주얼 디자인 시안</P></DIV></DIV>
+			</LI>	
+
+			
+		</UL> <!--end portfolio-area -->
+	</DIV> <!-- wrapper -->
+
+	
+	<!-- Footer -->
+	<DIV id="footer">
+		<br />	<br />	
+		<section>
+			<P align="center">Provides the best design with fresh inspiration and the latest trends. &#124; copyright &#169;2011.</P>
+		</section>
+		<br />
+	</DIV>
+
+</DIV>
+
+
+
+
+<!--[if lte IE 8]><![endif]-->
+</BODY></HTML>

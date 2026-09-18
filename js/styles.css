@@ -1,0 +1,107 @@
+@import url( https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap );
+
+* {
+	margin: 0px; padding: 0px; 	
+}
+
+html {
+	font: inherit; margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+}
+
+body {
+	font: inherit; 
+	margin: 0 auto; 
+	padding: 0px; border: 0px currentColor; border-image: none; vertical-align: baseline; font-size-adjust: inherit; font-stretch: inherit;
+	
+}
+
+.portfolio-content {
+	margin: 0 auto; width: 95%;
+}
+
+
+
+
+a {
+	color: rgb(90, 101, 110); text-decoration: none;
+}
+a:hover {
+	color: rgb(48, 124, 187); text-decoration: underline;
+}
+
+.column-clear {
+	clear: both;
+}
+
+.wrapper {
+	margin: 0px auto; width: 100%;
+}
+
+
+
+.portfolio-item2 {
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+/* .(dot) class 선택 */
+.portfolio-categ {
+	margin-bottom: 30px;
+}
+
+.portfolio-categ li {
+	margin-right: 10px; display: inline;
+}
+
+
+/* 이미지 간격 */
+
+.image-block {
+	display: block; position: relative;
+}
+.image-block img {
+	background: rgb(255, 255, 255); padding: 10px; border-radius: 4px; border: 1px solid rgb(213, 213, 213);
+}
+.image-block img:hover {
+	border: 1px solid rgb(113, 185, 244); box-shadow: 0px 0px 5px #71b9f4;
+}
+
+
+.portfolio-area li {
+	margin: 0px 12px 20px 0px; padding: 5px; width: 350px; overflow: hidden; float: left;
+}
+
+.portfolio-text {
+	margin-top: 10px;	
+}
+
+.post-subtitle a {
+	color: rgb(102, 102, 102);	
+	font-size: 10pt;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.post-subtitle a:hover {
+	color: rgb(102, 102, 102); 
+}
+
+
+li.active a {
+	text-decoration: underline;
+}
+
+/* # DIV적용 id 선택자 */
+#footer {
+	width: 100%; line-height: 20px; 
+	border-top-color: rgb(226, 226, 226); 
+	border-bottom-color: rgb(226, 226, 226); 
+	border-top-width: 1px; border-bottom-width: 1px; 
+	border-top-style: solid; border-bottom-style: solid; float: left; 
+	background-color: rgb(242, 242, 242);
+}
+
+.indent1 {
+	text-indent: 50px; /* 들여쓰기 */
+}

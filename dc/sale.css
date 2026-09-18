@@ -1,0 +1,50 @@
+#contents {
+    width: 450px;
+    margin: 0 auto;
+}
+
+#contents img {
+    float: left;
+    margin-right: 25px;
+}
+
+ul {
+    list-style: none;
+    padding-top: 40px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li label {
+    width: 80px;
+    float: left;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: 110px;
+    padding: 5px 10px;
+    margin: 0 5px 0 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+    font-size: 1em;
+}
+
+button:hover{
+    color: #fff;
+    background-color: rgba(207, 207, 207, 0.884);
+    border-color: rgb(77, 19, 131);
+}
+
+#showResule {
+    width: 200px;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
